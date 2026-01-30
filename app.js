@@ -8,8 +8,7 @@ app.set('view engine', 'ejs'); // Usaremos EJS para la vista
 app.use(express.static('public')); // Para archivos CSS/JS frontend
 
 
-
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.get("/", (request, response) => {
     response.json({
@@ -41,5 +40,6 @@ app.get("/api/persons",(request,response)=>{
 });
 
 app.listen(port, () => {
-    console.log("Server is running on port ${port}")
+    console.log(`Server is running on port ${port}`)
+    
 });

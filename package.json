@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "keywords": [],
@@ -12,9 +13,7 @@
   "dependencies": {
     "cors": "^2.8.6",
     "ejs": "^4.0.1",
-    "express": "^5.2.1"
-  },
-  "devDependencies": {
+    "express": "^5.2.1",
     "@faker-js/faker": "^10.2.0"
   }
 }
